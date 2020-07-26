@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'rickUrl.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
+<<<<<<< HEAD
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -96,7 +97,19 @@ DATABASES = {
         'PORT':'5432',
 
     }
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hleqpeny',
+        'USER':'hleqpeny',
+        'PASSWORD':'WyWbtoiR2NViPnmvkJlzlUKD_13Vi8Ie',
+        'HOST':'satao.db.elephantsql.com',
+        'PORT':'5432'
+    }
+>>>>>>> 22aed468e9818a313bd80c17c81a8b36e456c702
 }
+
 
 
 # Password validation
