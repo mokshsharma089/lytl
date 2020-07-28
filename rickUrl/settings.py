@@ -56,7 +56,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'rickUrl.urls'
 ROOT_HOSTCONF = 'rickUrl.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = "https://lytl.in/" 
+DEFAULT_REDIRECT_URL = "www.lytl.in/" 
 PARENT_HOST = "lytl.in"
 
 ROOT_URLCONF = 'rickUrl.urls'
