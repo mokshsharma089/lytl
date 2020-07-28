@@ -5,7 +5,7 @@ from.validators import validate_url,validate_dot_com
 # Create your models here.
 
 class rickUrl(models.Model):
-    url=models.CharField(max_length=1024)
+    url=models.TextField()
     shortcode=models.CharField(max_length=20,unique=True,blank=True)
 
     def save(self,*args,**kwargs):
