@@ -26,7 +26,7 @@ SECRET_KEY = 'y_ci26@$so^^)85d@spj3*d+_bx_1ux318t2t^*4@n-jst10h1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['teeensy.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['lytl.in','www.lytl.in','teeensy.herokuapp.com','127.0.0.1']
 
 ADMINS = [
     ('moksh','moksh,sharma.089@gmail.com')
@@ -56,8 +56,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'rickUrl.urls'
 ROOT_HOSTCONF = 'rickUrl.hosts'
 DEFAULT_HOST = 'www'
-DEFAULT_REDIRECT_URL = "https://teeensy.herokuapp.com/" 
-PARENT_HOST = "teeensy.herokuapp.com"
+DEFAULT_REDIRECT_URL = "https://lytl.in/" 
+PARENT_HOST = "lytl.in"
 
 ROOT_URLCONF = 'rickUrl.urls'
 
