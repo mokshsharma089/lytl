@@ -44,7 +44,8 @@ class HomeView(View):
                 if "http://" not in new_url and "https://" not in new_url:
                     new_url="http://"+new_url
                 if rickUrl.objects.filter(shortcode=short_code).exists():
-                    the_form = SubmitUrlForm()
+                    data={'url':new_url}
+                    the_form = SubmitUrlForm(initial=data)
                     context = {
                     "title": "RickUrl.co",
                     "form": the_form,
