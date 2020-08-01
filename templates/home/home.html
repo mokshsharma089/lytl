@@ -6,7 +6,24 @@
     <form method='POST' action='.'> 
         {% csrf_token %}
         <br /><hr><br />
-              {{ form.as_p }}
+        <div>
+            {% if message %}
+            <div class="alert alert-danger" role="alert">
+                {{message}}
+              </div>
+            {% endif %}
+            Submit long URL :- {{ form.url }}
+            <br /><br />
+            Custom Shortcode :- <input type="checkbox" onclick="javascript:yesnoCheck();" name="yesno" id="yesCheck">
+            <br /><br />
+            <div id="ifYes" style="display:none">
+                Submit Custom Shortcode :- {{form.shortcode}}
+                <br /><br />
+                <strong>Shortcode</strong> will be used in lytl url like this <strong>www.lytl.in/Shortcode</strong>
+                <br /><br />
+                Custom <strong>Shortcode </strong>for lytl Url must be smaller than 10 characters
+            </div>
+        </div>
         <br /><hr><br />
         <input type='submit' value='Shorten' class='btn btn-primary' >
     </form>
