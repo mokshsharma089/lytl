@@ -5,7 +5,7 @@ from.validators import validate_url,validate_dot_com
 # Create your models here.
 
 class rickUrl(models.Model):
-    url=models.CharField(max_length=300)
+    url=models.CharField(max_length=600)
     shortcode=models.CharField(max_length=20,unique=True)
     class Meta:
         unique_together = (('url', 'shortcode'),)
